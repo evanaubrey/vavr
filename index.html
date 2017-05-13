@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://aframe.io/releases/0.5.0/aframe.min.js"></script>
+    <script src="https://rawgit.com/mayognaise/aframe-video-shader/master/dist/aframe-vid-shader.min.js"></script>
+
+</head>
+<body>
+<a-scene>
+    <a-assets>
+        <video id="background" autoplay loop="true" src="https://ucarecdn.com/173b873b-27c3-45e1-abba-32c2632f9ddd/">
+    </a-assets>
+    <a-videosphere src="#background"></a-videosphere>
+    <a-entity geometry="primitive:plane;"
+              scale="25.118 41.022 13.744"
+              position="-7.348 -2.768 -59.789"
+              rotation="0 10.714 0"
+              material="shader:video;src:url(media/flashes.mp4);"></a-entity>
+</a-scene>
+</body>
+</html>
