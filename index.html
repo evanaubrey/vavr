@@ -11,13 +11,15 @@
 <a-scene>
     <a-assets>
         <video id="background" autoplay loop="true" src="https://ucarecdn.com/173b873b-27c3-45e1-abba-32c2632f9ddd/">
+            <video id="flashes" autoplay loop="true" src="media/flashes.mp4">
+
     </a-assets>
     <a-videosphere src="#background"></a-videosphere>
     <a-entity geometry="primitive:plane;"
               scale="25.118 41.022 13.744"
               position="-7.348 -2.768 -59.789"
               rotation="0 10.714 0"
-              material="shader:video;src:url(media/flashes.mp4);"></a-entity>
+              material="src: #flashes"></a-entity>
 </a-scene>
 </body>
 </html>
